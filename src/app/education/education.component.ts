@@ -9,36 +9,39 @@ import * as awesom from '@fortawesome/free-solid-svg-icons';
 
 })
 export class EducationComponent implements OnInit {
-  stageIsShown: boolean = false ;
-  freelanceIsShown : boolean = false;
-  alternanceIsShown:boolean = false;
-  freelanceScotfyIsShown:boolean = false;
+  cameriere: boolean = false ;
+  stage : boolean = false;
+  magazzino:boolean = false;
+  apprendistato:boolean = false;
   planeIcon: any ;
   gameIcon:any;
-  volleyBallIcon:any;
+  calcioBallIcon:any;
+  tennisBallIcon: any;
   detailOnClick(id:String) {
-    if(id=="alternance_detail"){
-      this.alternanceIsShown = !this.alternanceIsShown;
-    }
-    else if(id=="freelance_detail"){
-     this.freelanceIsShown = !this.freelanceIsShown;
+    if(id=="magazzino_detail"){
+      this.magazzino = !this.magazzino;
     }
     else if(id=="stage_detail"){
-      this.stageIsShown = !this.stageIsShown;
+     this.stage = !this.stage;
     }
-    else if(id=="freelanceScotfy_detail"){
-      this.freelanceScotfyIsShown = !this.freelanceScotfyIsShown;
+    else if(id=="cameriere_detail"){
+      this.cameriere = !this.cameriere;
     }
-   
+    else if(id=="apprendistato_detail"){
+      this.apprendistato = !this.apprendistato;
+    }
+
   }
- 
-  constructor() { 
+
+  constructor() {
   }
 
   ngOnInit(): void {
     this.planeIcon=awesom.faPlane;
     this.gameIcon=awesom.faGamepad;
-    this.volleyBallIcon=awesom.faVolleyballBall;
+    this.calcioBallIcon=awesom.faVolleyballBall;
+    this.tennisBallIcon= awesom.faTableTennis;
+
   }
 
 }

@@ -4,92 +4,115 @@
         <span class="bar-title mb-5"></span>
         <div class="row">
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <h4><strong>Education</strong></h4>
+                <h4><strong>Formazione scolastica ed extra </strong></h4>
 
                 <ul class="timeline">
                     <li>
-                        <h5><strong>Master 2 E-services</strong> </h5>
-                        <em class="font-italic">Master of degital services<br> Université De Lille, Fr</em>
-                        <p class="year p-2 d-flex justify-content-center">2019 - 2020</p>
+                        <h5><strong>Diploma di maturità</strong> </h5>
+                        <em class="font-italic">Professionale alberghiero<br> I.I.S Paolo Baffi, Rm</em>
+                        <p class="year p-2 d-flex justify-content-center">2014 - 2019 (5 anni)</p>
                     </li>
                     <li>
-                        <h5>Master 1 informatique</h5>
-                        <em class="font-italic">General Master Computer Science <br> Université De Lille, Fr</em>
-                        <p class="year p-2 d-flex justify-content-center">2018 - 2019</p>
+                        <h5>Corso programmatore</h5>
+                        <em class="font-italic">Full-Stack Developer <br> Customer management it, Rm</em>
+                        <p class="year p-2 d-flex justify-content-center">2020 - 2021 (6 mesi)</p>
                     </li>
                     <li>
-                        <h5>Licence 3 informatique</h5>
-                        <em class="font-italic">Licence of Computer Science <br> Université De Lille, Fr</em>
-                        <p class="year p-2 d-flex justify-content-center">2015 - 2018</p>
-                    </li>
+                      <h5>Corso Java EE Developer</h5>
+                      <em class="font-italic">Udemy <br>Online</em>
+                      <p class="year p-2 d-flex justify-content-center">2020 (3 mesi)</p>
+                  </li>
                 </ul>
             </div>
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <h4><strong>Expériences</strong></h4>
+                <h4><strong>Esperienze</strong></h4>
                 <ul class="timeline">
                     <li>
-                        <h5>Dévloppeur en freelance</h5>
-                        <em>Scotfy, Lyon, Fr</em>
+                        <h5>Apprendista programmatore-junior</h5>
+                        <em>Customer Management It S.R.L., Trastevere, Rm</em>
                         <div class="d-flex flex-row">
-                            <p class="year p-2 d-flex justify-content-center">2020 - 2021 (2 mois)</p>
-                            <button (click)="detailOnClick('freelanceScotfy_detail')" type="button" class="btn btn-primary">+
-                                Detail</button>
+                            <p class="year p-2 d-flex justify-content-center">2021-In corso</p>
+                            <button (click)="detailOnClick('apprendistato_detail')" type="button" class="btn btn-primary">
+                            +Dettagli</button>
                         </div>
-                        <p *ngIf="freelanceScotfyIsShown">
+                        <p *ngIf="apprendistato">
+                          <Strong>In lavorazione</Strong>
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Stage programmatore Full-Stack</h5>
+                        <em>Customer Management It S.R.L., Trastevere, Rm</em>
+                        <div class="d-flex flex-row">
+                            <p class="year p-2 d-flex justify-content-center">2021 - 2021 (2 mesi)</p>
+                            <button (click)="detailOnClick('stage_detail')" type="button" class="btn btn-primary">
+                                +Dettagli</button>
+                        </div>
+                        <p *ngIf="stage">
+                            <strong>Mi occupavo di : </strong>
+                            <br>
+                            Sviluppo di un applicazione server/client per la gestione dei bandi delle gare di appalto con Db MySql.
+                            <strong>Competenze acquisite :</strong>
+                            Collegamento server con Db MySql,uso dell'archittettura MVC per il server,implementazioni
+                            sever/client di CRUD.
+                            <br>
+                            <strong>
+                             <br>
+                              Teconologie utilizzate:</strong>
+                             JAVA , Spring boot, Angular , Angular Materials, MySql
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Responsabile di magazzino</h5>
+                        <em>Dear society A.R.L, Pomezia, Rm</em>
+                        <div class="d-flex flex-row">
+                            <p class="year p-2 d-flex justify-content-center">2018 - 2020 (2 anni)</p>
+                            <button (click)="detailOnClick('magazzino_detail')" type="button" class="btn btn-primary">+Dettagli</button>
+                        </div>
+                        <p *ngIf="magazzino">
+                            <strong>Mi occupavo di :</strong>
+                            Spedizione merci.
+                            Sviluppo pratiche per la spedizione.
+                            Responsabile dello scarico e carico merci.
+                            Responsabile del settore vestiario (dal 14/07/19 con conseguente
+                            passaggio da contratto a tempo determinato a tempo
+                            indeterminato.)
+                            <br>
+                            <strong>Competenze acquisite:</strong>
+                              Capacita comunicative migliorate in quanto parlavo direttamente con i venditori e clienti.
+                              Ottime capacità di problem solving.
+                              Capacità di adattamento ad ambienti differenti.
+                              Predisposizione per il lavoro in team, in quanto mi occupavo di gestire il lavoro quotidiano di
+                              8-9 persone.
+                            <br>
+                          <strong>Strumenti usati : </strong>
+                            Excel
 
-                            <strong>Tâche 1:</strong> Mise en place d'un gestionnaire de thèmes (couleurs, logo). <br>
-                            <strong>Tâche 2:</strong> Mise en place d'un gestionnaire de dossiers virtuels qui peuvent contenir des apps Qlik Sense.<br>
-                            <strong>Tâche 3:</strong> Développement d'une interface de sauvegarde des ressources.<br>
-                            <strong>Tâche 4:</strong> Création de pages web personnalisables : Qlik Sense Mashups (En cours).<br>
-                            <strong>Téchnologies:</strong> Java, J2EE, Angular 11, Angular Materials, pgSql, Qlik Sense
                         </p>
                     </li>
                     <li>
-                        <h5>Dévloppeur en freelance</h5>
-                        <em>AGC Glass Europe, Maubeuge, Fr</em>
+                        <h5>Cameriere</h5>
+                        <em>Braceria pugliese, Fiumicino, Rm</em>
                         <div class="d-flex flex-row">
-                            <p class="year p-2 d-flex justify-content-center">2020 - 2021 (5 mois)</p>
-                            <button (click)="detailOnClick('freelance_detail')" type="button" class="btn btn-primary">+
-                                Detail</button>
-                        </div>
-                        <p *ngIf="freelanceIsShown">
-                            <strong>Mission 1:</strong> Développement d'une application de notation de fournisseurs par les acheteurs.<br>
-                            <strong>Mission 2:</strong> Maintenance évolutive et corrective d'applications.<br>
-                            <strong>Téchnologies:</strong> JAVA 8, Spring, Angular 8, Angular Materials, MySql
-                        </p>
-                    </li>
-                    <li>
-                        <h5>Dévloppeur en alternance</h5>
-                        <em>AGC Glass Europe, Maubeuge, Fr</em>
-                        <div class="d-flex flex-row">
-                            <p class="year p-2 d-flex justify-content-center">2019 - 2020 (1 an)</p>
-                            <button (click)="detailOnClick('alternance_detail')" type="button" class="btn btn-primary">+
-                                Detail</button>
-                        </div>
-                        <p *ngIf="alternanceIsShown">
-                            <strong>Mission 1:</strong> Application de gestion des camions entrant sur le site<br>
-                            <strong>Mission 2:</strong> Amélioration d'une application de création de plans de préventions.<br>
-                            <strong>Mission 3:</strong> Application de mise en forme des commandes du verre, dans l’intérêt d'une
-                            meilleure lisibilité des priorités pour les équipes de production. <br>
-                            <strong>Téchnologies:</strong>  JAVA 8, Spring, Angular 8, Angular Materials, MySql
-                        </p>
-                    </li>
-                    <li>
-                        <h5>Stagiaire Dévloppeur logiciel</h5>
-                        <em>Scotfy, Lyon, Fr</em>
-                        <div class="d-flex flex-row">
-                            <p class="year p-2 d-flex justify-content-center">2018 (3 mois)</p>
-                            <button (click)="detailOnClick('stage_detail')" type="button" class="btn btn-primary">+
-                                Detail</button>
+                            <p class="year p-2 d-flex justify-content-center">2015-2019 (4 anni)</p>
+                            <button (click)="detailOnClick('cameriere_detail')" type="button" class="btn btn-primary">+Dettagli</button>
 
                         </div>
-                        <p *ngIf="stageIsShown">
-                            <strong>Multilingue:</strong> Mise en place d’un système de gestion de la langue afin de
-                            permettre à l’utilisateur de choisir la langue des interfaces, des messages et des logs.<br>
-                            <strong>Clé de licence:</strong> Validation du logiciel à l’aide d’une clé de licence basée
-                            sur le nom d’utilisateur Windows.<br>
-                            <strong>Technologies:</strong> C#, .NET, Chiffrement AES-256
-                        </p>
+                        <p *ngIf="cameriere">
+                            <strong>Mi occupavo di :</strong>
+                            Accoglienza alla clientela e offerta di un servizio professionale,
+                            cordiale e competente.
+                            Preparazione e servizio ai tavoli, gestione delle comande e della
+                            sala, pulizia dei locali di servizio.
+                            Monitoraggio della sala per verificare la disponibilità dei posti a
+                            sedere e rispondere tempestivamente alle richieste degli ospiti.
+                            Stagioni estive (full time) : Responsabile della sala e gestione del
+                            reparto Carne.
+                            Stagioni invernali (weekend-part time)<br>
+                            <strong>Competenze acquisite:</strong>
+                            <br>
+                              Ottime competenze organizzative e di comunicazione.
+                              Abituato a lavorare sotto pressione.
+                          </p>
                     </li>
 
                 </ul>
@@ -97,44 +120,53 @@
             <div class="col-lg-4 col-md-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                 <div class="container row">
                     <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                        <h4><strong>Langues</strong></h4>
+                        <h4><strong>Lingue</strong></h4>
                         <div class="noProgress langue">
-                            <span class=""><img src="assets/images/france-flag.png" width="20"
-                                    alt="drapeau de la france"><strong> Français</strong> <i class="val">
-                                    Courant</i></span>
+                            <span class=""><img src="assets/images/italy-flag.png" width="20"
+                                    alt="drapeau de la france"><strong> Italiano </strong> <i class="val">
+                                    Attuale</i></span>
                         </div>
 
                         <div class="noProgress langue">
                             <span class=""><img src="assets/images/united-kingdom-flag.png" width="20"
-                                    alt="drapeau du royaume uni"><strong> Anglais</strong> <i class="val"> Bon
-                                    niveau</i></span>
+                                    alt="drapeau du royaume uni"><strong>Inglese</strong> <i class="val"> Buon
+                                    livello</i></span>
                         </div>
 
-                
+
 
                     </div>
                 </div>
                 <div class="container row">
                     <div class="mt-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                        <h4><strong>Centre d'intérêt</strong></h4>
+                        <h4><strong>Hobby e interessi :</strong></h4>
                         <div class="noProgress langue">
                             <span>
-                                <fa-icon [icon]="volleyBallIcon"></fa-icon><strong> Sport</strong> <i class="val"> 5 ans
-                                    Volley Ball</i>
+                              <strong> Sport :</strong>
+                              <br>
+                                <fa-icon [icon]="calcioBallIcon"></fa-icon>
+                                <i class="val"> 3 anni di calcio</i>
+                                <br>
+                                <fa-icon [icon]="tennisBallIcon"></fa-icon>
+                                <i class="val"> 10 anni di tennis</i>
+                             </span>
+                        </div>
+
+                        <div class="noProgress langue">
+                            <span>
+                              <strong> Viaggi :</strong>
+                              <br>
+                                <fa-icon [icon]="planeIcon"></fa-icon><i class="val">
+                                    Austria, Malta, Grecia, Portogallo</i>
                             </span>
                         </div>
 
                         <div class="noProgress langue">
                             <span>
-                                <fa-icon [icon]="planeIcon"></fa-icon><strong> Voyages</strong> <i class="val">
-                                    Belgique, Espagne, Pays-Bas, Suisse</i>
-                            </span>
-                        </div>
-
-                        <div class="noProgress langue">
-                            <span>
-                                <fa-icon [icon]="gameIcon"></fa-icon><strong> Jeux de sociétés </strong> <i class="val">
-                                    Jeu de dames et de dominos, Among US, Ludo, ..etc</i>
+                              <strong> Videogame : </strong>
+                              <br>
+                                <fa-icon [icon]="gameIcon"></fa-icon><i class="val">
+                                  Horror,Strategia,Avventura</i>
                             </span>
                         </div>
 

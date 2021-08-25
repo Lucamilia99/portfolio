@@ -12,13 +12,14 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     var options = {
-      strings: ['','Full-Stack', 'WEB','Mobile'],
+      strings: ['Full-Stack', 'WEB'],
       typeSpeed: 120,
       backSpeed: 100,
       loop: true,
     };
-    
-    var typed = new Typed('.typed', options);
+
+    // metodo usato in html per il cambio nome
+    let typed = new Typed('.typed', options);
     typed.reset(true)
   }
 

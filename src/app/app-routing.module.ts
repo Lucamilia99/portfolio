@@ -7,7 +7,13 @@ import { EducationComponent } from './education/education.component';
 import { ProjectsComponent } from './projects/projects.component';
 
 
-const routes: Routes = [{path:'',component:AppComponent},{path:'competences',component:CompetencesComponent},{path:'projects',component:ProjectsComponent},{path:'cv',component:EducationComponent},{path:'about',component:AboutComponent}];
+const routes: Routes = [
+  {path:'',component:AppComponent},
+  {path:'competenze',component:CompetencesComponent},
+  {path:'progetti',component:ProjectsComponent},
+  {path:'cv',component:EducationComponent},
+  {path:'me',component:AboutComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
